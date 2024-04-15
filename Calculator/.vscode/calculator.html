@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator by mohan</title>
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="tag">
+            <p>Mohan's Calculator</p>
+        </div>
+        <input type="text" placeholder="0" id="display" readonly>
+        <div>
+            <button onclick="clearBtn()" class="operator">AC</button>
+            <button onclick="delBtn()" class="operator">DEL</button>
+            <button onclick="buttonPress('/')" class="operator">/</button>
+            <button onclick="buttonPress('%')" class="operator">%</button>
+        </div>
+        <div>
+            <button onclick="buttonPress('7')">7</button>
+            <button onclick="buttonPress('8')">8</button>
+            <button onclick="buttonPress('9')">9</button>
+            <button onclick="buttonPress('*')" class="operator">*</button>
+        </div>
+        <div>
+            <button onclick="buttonPress('4')">4</button>
+            <button onclick="buttonPress('5')">5</button>
+            <button onclick="buttonPress('6')">6</button>
+            <button onclick="buttonPress('-')" class="operator">-</button>
+        </div>
+        <div>
+            <button onclick="buttonPress('1')">1</button>
+            <button onclick="buttonPress('2')">2</button>
+            <button onclick="buttonPress('3')">3</button>
+            <button onclick="buttonPress('+')" class="operator">+</button>
+        </div>
+        <div>
+            <button onclick="buttonPress('00')">00</button>
+            <button onclick="buttonPress('0')">0</button>
+            <button onclick="buttonPress('.')">.</button>
+            <button onclick="eqaualBtn('')" class="eqlBTN">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
